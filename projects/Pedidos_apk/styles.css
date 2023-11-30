@@ -1,0 +1,128 @@
+:root {
+    --main-white: #ffffff;
+    --main-aqua: #5BE9B9;
+    --main-purple: #6E07F3;
+    --main-gradient: linear-gradient(0deg, rgba(34,0,189,1) 4%, rgba(100,0,177,1) 41%, rgba(99,40,195,1) 71%, rgba(86,57,255,1) 100%);
+    --main-gray: #303841;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+scroll-behavior: smooth;
+}
+
+h1{
+    font-size: 50px;
+    font-family: Verdana, sans-serif;
+}
+
+
+
+/*section1*/
+#welcome-section{
+    background: var(--main-gradient);
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    
+}
+#title{
+    margin-top:1vh;
+    text-align: center;
+    color:var(--main-white);
+}
+#applogo{
+    width:50vh;
+margin:10px auto;
+}
+#welcome-div{
+    display:flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 90%;
+    height:70%;
+    margin: 5vh auto ;
+    padding-top:50px;
+    background:white;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    border-radius: 5%;
+    box-shadow: -8px 8px rgba(22, 22, 22, 0.2);
+}
+@media (max-width:650px){
+    #welcome-div{
+        margin:25% auto;
+        height:450px;
+    }
+}
+@media (max-width:450px){
+    #welcome-div{
+        margin:5% auto;
+        height:600px;
+        
+    }
+}
+
+#my-name{
+    margin: 0px auto
+    
+}
+
+#cap{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#presentation{
+    width:90%;
+    margin-top:30px;
+    margin-bottom: 8vh;
+    padding-top: 10px;
+    font-size: 20px;
+    
+}
+
+/*section2*/
+#technologies{display:flex;
+    background-color:#cba38a;
+    min-height:100vh;
+    justify-content:center;
+}
+
+#technologies-div{
+    display:flex;
+    flex-direction: column;
+    max-width: 1000px;
+    width: 100%;
+    margin: 10vh auto;
+    padding-top:50px;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+#tech-cap{
+    margin:30px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width:400px;
+    color:var(--main-white);
+    background-color: var(--main-purple);
+    box-shadow: -7px 7px rgba(22, 22, 22, 0.2);
+    border-radius:10px 10px 10px 10px;
+
+}
+@media(max-width:450px){
+    #tech-cap{
+        max-width:80%;
+    }
+}
+.tech-img{
+    margin:20px 20px;
+    height:500px
+}
